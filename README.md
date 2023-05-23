@@ -6,8 +6,11 @@ Smart Parking is an IoT based smart car parking system coming with a mobile appl
 To help with demonstrating the project, we made a simple car park with sensors and other accessories. It includes a automatic gate, a LCD screen, and three parking slots. 
 
 If there are free slots available, the gate will automatically open upon arrival of a vehicle.
+
 If there are no slots available, gate will remain closed.
+
 If user has a booking and upon his arrival, the gate will open (If there are other free slots). Otherwise (If there are no other empty slots) he has the ability to open the gate by simply clicking the "Open Gate" button in the Mobile App.
+
 The LCD screen near the gate will display the data such as the number of free slots and the availability of each slot (E for Empty and F for Full).
 
 ![1](https://github.com/MadhukaD/Smart-Parking/assets/83831219/54b14075-7f5b-43e6-b7de-51a3639f5bb7)
