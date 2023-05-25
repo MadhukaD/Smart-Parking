@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".MyBooking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/homebackground"
+            tools:context=".MyBooking">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="340dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:text="My Booking Information"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="96dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.977"
+                app:srcCompat="@drawable/noobz" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10dp"
+                android:layout_marginTop="18dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@id/textView"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Name"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title_text8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Parking Slot"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+                    <TextView
+                        android:id="@+id/title_text10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Date"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textSlot" />
+
+                    <TextView
+                        android:id="@+id/title_text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Duration"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textDate" />
+
+                    <TextView
+                        android:id="@+id/textName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title_text2" />
+
+                    <TextView
+                        android:id="@+id/textDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title_text10" />
+
+                    <TextView
+                        android:id="@+id/textDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title_text12" />
+
+                    <TextView
+                        android:id="@+id/textSlot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title_text8" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/OpenGateBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/login_button"
+                android:text="Open Gate"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/myBackBtn"
+                app:layout_constraintEnd_toEndOf="@+id/cardView"
+                app:layout_constraintStart_toEndOf="@+id/myBackBtn"
+                app:layout_constraintTop_toTopOf="@+id/myBackBtn" />
+
+            <Button
+                android:id="@+id/myBackBtn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/login_button"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Smart Parking</string>
+
+    <string-array name="slotArray123">
+        <item>Slot1</item>
+        <item>Slot2</item>
+        <item>Slot3</item>
+    </string-array>
+    <string-array name="slotArray12">
+        <item>Slot1</item>
+        <item>Slot2</item>
+    </string-array>
+    <string-array name="slotArray13">
+        <item>Slot1</item>
+        <item>Slot3</item>
+    </string-array>
+    <string-array name="slotArray23">
+        <item>Slot2</item>
+        <item>Slot3</item>
+    </string-array>
+    <string-array name="slotArray1">
+        <item>Slot1</item>
+    </string-array>
+    <string-array name="slotArray2">
+        <item>Slot2</item>
+    </string-array>
+    <string-array name="slotArray3">
+        <item>Slot3</item>
+    </string-array>
+    <string-array name="slotArray0">
+        <item>No Available Slots</item>
+    </string-array>
+</resources>
+

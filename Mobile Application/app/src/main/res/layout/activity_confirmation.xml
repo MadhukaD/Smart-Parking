@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".Confirmation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/homebackground"
+            tools:context=".Confirmation">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="340dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="130dp"
+                android:text="Your booking is confirmed!"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="96dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.996"
+                app:srcCompat="@drawable/noobz" />
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/login_button"
+                android:text="Home"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

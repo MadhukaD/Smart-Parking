@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "907506597534",
+    "firebase_url": "https://smartcarpark-fae71-default-rtdb.firebaseio.com",
+    "project_id": "smartcarpark-fae71",
+    "storage_bucket": "smartcarpark-fae71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907506597534:android:a423f2b9c195bd06b1858f",
+        "android_client_info": {
+          "package_name": "com.example.smartparking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907506597534-6l9rmuhci2olvhmv5mq3vco1n34lf7om.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartparking",
+            "certificate_hash": "d2993f9c5728bc17df09a413f20c9b2b207e773d"
+          }
+        },
+        {
+          "client_id": "907506597534-qpb4uv0ltsg8fa1ef5t4man8869q374s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBapJBfZYojnrCoqxy9JA3Fp3NOgTWK5m0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907506597534-qpb4uv0ltsg8fa1ef5t4man8869q374s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
